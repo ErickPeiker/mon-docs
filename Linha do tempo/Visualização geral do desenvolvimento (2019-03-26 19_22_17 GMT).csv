@@ -1,0 +1,96 @@
+"WBS #","Name / Title",Type,"Start Date","End Date","Estimated Hours","Actual Hours","Percent Complete",Resources,Predecessors,Notes,Comments,"Task Color"
+1,"Visualização geral do desenvolvimento",project,2019-01-14,2019-05-10,0,0,45.67,,,,,
+1.1,"Todas tarefas gerenciáveis",group,2019-01-14,2019-05-10,0,0,45.67,,,,,
+1.1.1,"Definição de banco de dados",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,red1
+1.1.2,"Estruturação da Nuvem-Client",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,red1
+1.1.3,"Desenhar solução completa do sistema",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,red1
+1.1.4,"Multi conexões dinâmicas - Nuvem-Server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,red1
+1.1.5,"Estruturação da Nuvem-Server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,red1
+1.1.6,"Comunicação Nuvem-Client com Nuvem-Server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,red1
+1.1.7,"Estruturação da API que receberá requisições dos clientes",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,red1
+1.1.8,"Criar padrão de comunicação entre os coletores com o coletor master",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,red1
+1.1.9,"Autenticação e permissionamento da aplicação",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,red1
+1.1.10,"Modelar comunicações dos coletores, coletores masters com a API que comunicará com os coletores",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,red1
+1.1.11,"Containers do SQL Server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,red1
+1.1.12,"Estruturação da API",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,blue2
+1.1.13,"Implementar multi conexões por clientes",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.14,"Implementação da estrutura e template do client",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.15,"#7 - Tela de Papéis",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.16,"#14 - Implementação da estrutura do server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.17,"#15 - Comunicação Nuvem-Client com Nuvem-Server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.18,"#16 - Autenticação e permissionamento",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.19,"#17 - Containers do SQL Server",task,2019-01-14,2019-01-14,0,0,100,Rafael,,,,green3
+1.1.20,"Disponibilizar lista de servidores master",task,2019-01-14,2019-01-14,0,0,100,"Erick J P",,,,blue2
+1.1.21,"Consultar os servidores master cadastrados",task,2019-01-15,2019-01-16,0,0,100,"Erick J P",1.1.20,,,green1
+1.1.22,"Tela - Cadastro dos servidores master",task,2019-01-17,2019-01-21,0,0,100,"Erick J P",1.1.21,,,green1
+1.1.23,"Gravar localmente (coletor master)",task,2019-01-22,2019-01-24,0,0,100,"Erick J P",,,,green1
+1.1.24,"Descoberta de discos",task,2019-01-25,2019-01-28,0,0,80,"Erick J P","1.1.22,1.1.23",,,green1
+1.1.25,"Descoberta de rede",task,2019-01-29,2019-01-30,0,0,0,"Erick J P",1.1.24,,,green1
+1.1.26,"Descoberta de aplicações",task,2019-01-31,2019-02-01,0,0,90,"Erick J P",1.1.25,,,green1
+1.1.27,"Listagem de telas e requisitos para o desenvolvimento das mesmas",task,2019-01-29,2019-02-01,0,0,100,Rafael,,,,red1
+1.1.28,"Estruturar grupos de acessos e permissão no bitbuket",task,2019-02-01,2019-02-01,0,0,100,Rafael,,,,red1
+1.1.29,"#20 - Criar arquivo readme",task,2019-02-04,2019-02-04,0,0,100,Rafael,,,,green3
+1.1.30,"#7 - Criar arquivo readme.md",task,2019-02-05,2019-02-05,0,0,100,Rafael,1.1.29,,,blue3
+1.1.31,"Modelagem do banco de dados",task,2019-02-04,2019-02-08,0,0,100,"Erick J P, Rafael","1.1.26,1.1.27",,,red1
+1.1.32,"Identificar custos operacionais de cada cliente",task,2019-02-06,2019-02-08,0,0,40,"Erick J P",,,"[Inserção de um novo cliente  API Node JS 	- Aumento Processamento 	- Aumento Memória 	- Aumento Dados de entrada (Coletores master) 	- Aumento Dados de saída (Banco de dados Cliente)  Banco de dados do Cliente 	- Nova máquina 	- Armazenamento 	- Processamento 	- Memória 	- Dados de entrada (API NodeJS) 	- Dados de saída (API PHP)  Banco de dados da Revenda 	- Aumento Processamento 	- Aumento Memória 	- Aumento de Armazenamento  Banco de dados da OWL 	- Aumento Processamento 	- Aumento Memória 	- Aumento de Armazenamento  API PHP 	- Aumento Processamento 	- Aumento Memória 	- Aumento Dados de entrada (Banco de dados Cliente / Revendas / OWL) 	- Aumento Dados de saída (React JS) -- by: Erick J P on 2019-02-25T12:30:44Z] [Falta identificar a quantificação (R$) que representa o aumento dos recursos com base no formato de cobranças -- by: Erick J P on 2019-02-25T12:32:01Z]",red1
+1.1.33,"Preparação do ambiente de testes",task,2019-02-11,2019-02-13,0,0,60,"Erick J P, Rafael",1.1.31,,,red1
+1.1.34,"Criar ambiente de background na nuvem",task,2019-02-14,2019-02-19,0,0,80,"Erick J P",1.1.33,,,red1
+1.1.35,"Pesquisar ferramenta de WIki",task,2019-02-15,2019-02-21,0,0,50,"Erick J P, Rafael",,,"[Não encontrado a ferramenta, porém utilizado o OneNote para armazenar a base de conhecimento atualmente -- by: Erick J P on 2019-02-25T12:29:47Z] [https://onedrive.live.com/view.aspx?resid=94BA8AFA6FD4ED42%21416041&id=documents&wd=target%28Base%20de%20Conhecimento.one%7C299023AA-CC12-489C-A5D5-69380BBF6F6B%2F%29 onenote:https://d.docs.live.net/94ba8afa6fd4ed42/Documentos/Startup%20-%20Monitoramento/Base%20de%20Conhecimento.one#section-id={299023AA-CC12-489C-A5D5-69380BBF6F6B}&end -- by: Erick J P on 2019-02-25T12:30:01Z]",red1
+1.1.36,"Gravar Configurações básicas",task,2019-02-21,2019-02-22,0,0,100,"Erick J P",1.1.34,,,green1
+1.1.37,"Salvar configurações no banco de dados",task,2019-02-25,2019-02-26,0,0,80,"Erick J P",1.1.36,,,green1
+1.1.38,"Recepção e gravação de configuração master",task,2019-02-27,2019-03-01,0,0,30,"Erick J P",1.1.37,,,blue2
+1.1.39,"Disponibilizar configuração master",task,2019-03-04,2019-03-07,0,0,40,"Erick J P",1.1.38,,,blue2
+1.1.40,"Buscar equipamentos SNMP",task,2019-03-08,2019-03-12,0,0,0,"Erick J P",1.1.39,,,green1
+1.1.41,"Buscar itens monitorados",task,2019-03-13,2019-03-13,0,0,100,"Erick J P",1.1.40,,,green1
+1.1.42,"Coletar dados Windows - CPU",task,2019-03-14,2019-03-14,0,0,0,"Erick J P",1.1.41,,,green1
+1.1.43,"Recepção e gravação de dados dos itens",task,2019-03-15,2019-03-19,0,0,0,"Erick J P",1.1.42,,,blue2
+1.1.44,"Dados podendo ser utilizado na API",milestone,2019-03-20,2019-03-20,0,0,0,,1.1.43,,,blue2
+1.1.45,"Coletar dados Windows - Memória",task,2019-03-20,2019-03-20,0,0,0,"Erick J P",1.1.43,,,green1
+1.1.46,"Coletar dados Windows - Disponibilidade",task,2019-03-21,2019-03-21,0,0,0,"Erick J P",1.1.45,,,green1
+1.1.47,"Coletar dados Windows - Logs",task,2019-03-22,2019-03-25,0,0,0,"Erick J P",1.1.46,,,green1
+1.1.48,"Coletar dados Windows - Armazenamento",task,2019-03-26,2019-03-26,0,0,0,"Erick J P",1.1.47,,,green1
+1.1.49,"Coletar dados Windows - Windows Update",task,2019-03-27,2019-03-27,0,0,0,"Erick J P",1.1.48,,,green1
+1.1.50,"Coletar dados Windows - Aplicações",task,2019-03-28,2019-03-29,0,0,0,"Erick J P",1.1.49,,,green1
+1.1.51,"Criptografia de dados para envio à API",task,2019-04-01,2019-04-04,0,0,0,"Erick J P",1.1.50,,"[Fazer a criptografia na origem dos dados -- by: Erick J P on 2019-02-04T12:59:55Z]",green1
+1.1.52,"Descriptografar dados na API",task,2019-04-05,2019-04-08,0,0,0,"Erick J P",1.1.51,,,blue2
+1.1.53,"Criptografia de dados para envio ao coletor",task,2019-04-09,2019-04-10,0,0,0,"Erick J P",1.1.52,,,blue2
+1.1.54,"Consultar a conexão de banco de dados",task,2019-04-10,2019-04-12,0,0,0,"Erick J P",,,,blue2
+1.1.55,"Envio de dados para API NodeJS",task,2019-04-15,2019-04-16,0,0,0,"Erick J P",1.1.54,,,green1
+1.1.56,"Criar instalador do coletor - Incluir banco de dados",task,2019-04-17,2019-04-19,0,0,0,"Erick J P",1.1.55,,,blue2
+1.1.57,"Coletar dados do Mikrotik",task,2019-04-22,2019-04-30,0,0,0,"Erick J P",1.1.56,,,blue2
+1.1.58,"Coletar dados Linux - Disponibilidade",task,2019-05-01,2019-05-01,0,0,0,"Erick J P",1.1.57,,,green1
+1.1.59,"Coletar dados Linux - CPU",task,2019-05-02,2019-05-02,0,0,0,"Erick J P",1.1.58,,,green1
+1.1.60,"Coletar dados Linux - Memória",task,2019-05-03,2019-05-03,0,0,0,"Erick J P",1.1.59,,,green1
+1.1.61,"Coletar dados Linux armazenamento",task,2019-05-06,2019-05-08,0,0,0,"Erick J P",1.1.60,,,green1
+1.1.62,"Coletar dados Linux - Logs",task,2019-05-09,2019-05-10,0,0,0,"Erick J P",1.1.61,,,green1
+1.1.63,"#12 - Criação de tabelas do banco de dados",task,2019-02-15,2019-02-18,0,0,100,Rafael,,,,blue3
+1.1.64,"#13 - Automatizar build",task,2019-02-19,2019-02-25,0,0,100,Rafael,1.1.63,,,blue3
+1.1.65,"#22 - Automatizar build",task,2019-02-25,2019-02-25,0,0,100,Rafael,,,,green3
+1.1.66,"#8 - Controller de empresa",task,2019-02-25,2019-02-25,0,0,100,Rafael,1.1.64,,,blue3
+1.1.67,"#5 - Default filter para cliente",task,2019-02-25,2019-02-25,0,0,100,Rafael,1.1.66,,,blue3
+1.1.68,"#16 - Alterar cliente logado",task,2019-02-26,2019-02-26,0,0,100,Rafael,1.1.67,,,blue3
+1.1.69,"#21 - Selecionar cliente logado",task,2019-02-26,2019-02-26,0,0,100,Rafael,1.1.68,,,green3
+1.1.70,"Pesquisar meio para bloqueio de permissão específica de um dado",task,2019-02-27,2019-02-27,0,0,0,Rafael,1.1.69,,,red1
+1.1.71,"#15 - Adicionar SoftDelete no sistema",task,2019-02-28,2019-02-28,0,0,100,Rafael,1.1.70,,,blue3
+1.1.72,"#17 - Trocar a chave ID por UUID",task,2019-03-01,2019-03-01,0,0,100,Rafael,1.1.71,,,blue3
+1.1.73,"#2 - Controller de Grupos",task,2019-03-01,2019-03-01,0,0,100,Rafael,1.1.72,,,blue3
+1.1.74,"#18 - Publicação pelo Jenkins",task,2019-03-08,2019-03-08,0,0,0,Rafael,,,,blue3
+1.1.75,"#8 - Tela de Grupos",task,2019-03-04,2019-03-05,0,0,100,Rafael,1.1.73,,,green3
+1.1.76,"#1 - Controller de Usuários",task,2019-03-06,2019-03-06,0,0,100,Rafael,1.1.75,,,blue3
+1.1.77,"#6 - Tela de Usuários",task,2019-03-07,2019-03-07,0,0,100,Rafael,1.1.76,,,green3
+1.1.78,"#19 - Navegação por abas",task,2019-03-08,2019-03-11,0,0,0,Rafael,1.1.77,,,green3
+1.1.79,"#4 - Tela Inicial",task,2019-03-12,2019-03-15,0,0,100,Rafael,1.1.78,,,green3
+1.1.80,"Disponibilidade de testes",milestone,2019-03-18,2019-03-18,0,0,0,,1.1.79,,,blue2
+1.1.81,"#9 - Estruturação e cadastro manual de empresas",task,2019-03-18,2019-03-18,0,0,0,Rafael,1.1.79,,,blue3
+1.1.82,"#3 - Controller de Regras",task,2019-03-19,2019-03-20,0,0,0,Rafael,1.1.81,,,blue3
+1.1.83,"#10 - Controller para recepção de leitura",task,2019-03-21,2019-03-22,0,0,0,Rafael,1.1.82,,,blue3
+1.1.84,"#11 - Desenvolver ações para as regras",task,2019-03-25,2019-03-26,0,0,0,Rafael,1.1.83,,,blue3
+1.1.85,"#9 - Tela de Regras",task,2019-03-27,2019-04-02,0,0,0,Rafael,1.1.84,,,green3
+1.1.86,"#6 - Controller de IC - Incidentes",task,2019-04-03,2019-04-04,0,0,0,Rafael,1.1.85,,,blue3
+1.1.87,"#12 - Tela de IC - Incidente",task,2019-04-05,2019-04-10,0,0,0,Rafael,1.1.86,,,green3
+1.1.88,"#10 - Tela de Plantão",task,2019-04-11,2019-04-16,0,0,0,Rafael,1.1.87,,,green3
+1.1.89,"#4 - Controller de Configurações",task,2019-04-17,2019-04-18,0,0,0,Rafael,1.1.88,,,blue3
+1.1.90,"#11 - Tela de Configurações",task,2019-04-19,2019-04-23,0,0,0,Rafael,1.1.89,,,green3
+1.1.91,"Tela de Valores",task,2019-04-24,2019-04-30,0,0,0,Rafael,1.1.90,,,green3
+1.1.92,"#23 - Publicação Jenkins",task,,,0,0,0,,,,,blue2
+1.1.93,"Ações - Gatilho para jogar numa tela de listagem",task,,,0,0,0,,,,,blue2

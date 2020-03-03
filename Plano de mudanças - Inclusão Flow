@@ -1,0 +1,10 @@
+#############################
+Conversão de Bytes para bits (8/1)
+Incidente aberto para quanndo não tiver flow disponível
+Verificar questão de usuário e grupo para execução do processo do coletor
+#############################
+
+{'items.flow_portBytes': {$exists: true}, companyId:'631C666C-18F5-4C88-955C-96F394E33CBB', equipment: ObjectId('5d0934bf5ed9ea08d652af6b'), 	collectedAt: {$gt: new Date('2019-06-18')}}
+
+ENTRAR NO CONTAINER
+docker exec -it <container name> /bin/bash

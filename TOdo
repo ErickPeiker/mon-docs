@@ -1,0 +1,58 @@
+1 - Implementar o Log4J - OK
+	
+	1.1 - Baixar a biblioteca e colocar os logs em todos locais - OK
+
+	1.2 - Configurar perfils de geração dos logs - OK
+
+2 - Ajuste necessário para a aplicação ser funcional:
+
+	2.1 - Criar configuração local com multi clientes conforme abaixo: - OK
+	[{
+		id: 'F43AEEC2-1E9C-43AC-8C3C-4509F39221E9',
+		folder: '/var/nfsen/profiles-data/live/BordaFG/'	
+	},{
+		id: 'F43AEEC2-1E9C-43AC-8C3C-4509F39221E9',
+		folder: '/var/nfsen/profiles-data/live/OutroCliente/'	
+	}]
+
+	2.2 - Buscar os dados do arquivo fazendo a leitura do sistema operacional e gravando no banco de dados local. 
+
+	2.3 - Comportamento para não fazer a configuração inicial e as coletas ao mesmo tempo de dois clientes no mesmo coletor.
+
+3 - As configurações iniciais são:
+
+	3.1 - Inserir o equipamento localmente e na API
+
+	3.2 - Pegar os tipos de itens disponíveis e inserir localmente
+
+4 - Criar objeto de controle de coleta por cliente, onde que a cada minuto verifica se possui algum arquivo novo ou se ainda possui alguma pendência entre o período de coleta anterior
+	
+	4.1 - Fazer a verificação de minuto em minuto se possui algum novo arquivo.
+
+	4.2 - Ao concluir a leitura total de um arquivo salvar um registro no banco local
+
+	4.3 - Criar objeto de notificação por atraso em busca de arquivos
+
+	4.4 - Caso a busca de um arquivo tenha um atraso de 5 minutos enviar para a API uma notificação deste atraso
+
+	4.5 - Criar o recebimento e gravação de notificações na API
+
+5 - Envio das informações coletadas no flow
+
+	5.1 - Criar um objeto histórico conforme exemplo abaixo:
+	{
+	    "_id" : ObjectId("5ce27a2ba387926928ee0660"),
+	    "companyId" : ObjectId("5ce27a2ba387926928ee0660"),
+	    "equipmentId" : ObjectId("5ce27a2ba387926928ee0660"),
+	    "date" : ISODate("2019-05-20T09:58:01.337Z"),
+	    "value" : 80,
+	    "items" : [
+	        "endpoint.flow.port_bytes" : "8080",
+	        "endpoint.flow.protocol_bytes" : "TCP",
+	        "endpoint.flow.in_bytes" : "0.0.0.0",
+	    ]
+	}
+
+	5.2 - Ajustar a coleta de dados para inserir os dados corretos da maneira mais performática no objeto de histórico
+
+	5.3 - Criar na API o recebimento do objeto de histórico e fazer a gravação no banco de dados

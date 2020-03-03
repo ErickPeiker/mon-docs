@@ -1,0 +1,92 @@
+- Definição dos papéis
+	- Patrocinadores (Alcione e Marcelo)
+		- Gerencia o valor do produto
+	- Dono do produto (Alcione)
+		- Gerencia o scrum master 
+		- Comunicação com os patrocinadores
+		- Gerencia o backlog do produto
+	- Scum master (Erick)
+		- Valida se os processos estão acontecendo
+	- Time scrum (Erick e Rafael)
+		- Desenvolve as estórias
+
+- Sprint é time boxing (1 à 6 semanas)
+- Separar o backlog do produto para cada sprint (8 horas no total)
+	# Dono do produto (Time do produto)
+	- Etapa 1 é a definição do obejtivo da Sprint
+ 		- O que será feito
+ 			- Criar estórias detalhadas do que o usuário precisa fazer
+ 			- Como serão verificadas detalhadamente
+ 		-Métricas de qualidade
+ 			- Devem ser claramente definidos
+ 			- Todas métricas devem ser atendidas para concluir as estórias
+	 			- Variação não permitida no burndown
+	 			- Critérios de aceitação
+	 				- Brundown está com diferença de 5 horas do estimado para o realizado pelo time
+	 				- Burndown está com diferença de 
+	 			- Critérios de pronto
+	 				- Checklist para validar se tudo ocorreu
+	 				- Documentação de usabilidade de cada estória
+					- Avaliação de estória por outro membro da equipe sem intruções
+						- Registrar os pontos positivos e negativos da experiência ao executar a estória
+
+ 	# Time scrum (*Dono do produto)
+ 	- Etapa 2 é a definição de horas da Sprint 
+ 		- Como será feito as estórias
+ 			- Planejar
+ 			- Como verificar
+		- Colocar em um scrum board
+			- Backlog + estimativas
+		- Comunicação para aceitação com o dono do produto
+
+# Scrum master (Time do produto, *Dono do produto)
+- Reuniões diárias (15 minutos)
+	- O que eu fiz
+	- O que eu irei fazer
+	- Os impedimentos e dificuldades
+	- Preenchimento do burndow
+	- Verificar necessidade de avaliar checklist dos critérios de pronto
+	- Verificar necessidade de delegar alguém para testar uma estória
+	- Verificar necessidade de comunicação para o dono do produto
+		- Burdown diário estrapolando pelo critério de aceitação
+
+# Dono do produto (Time scrum)
+- Revisão da sprint os final da sprint (4 horas)
+	- Apresentação ao dono do produto
+	- Verificação dos itens atendidos
+		- Itens não aceitos voltam para o backlog
+
+# Scrum master (Patrocinadores, Dono do produto, Time scrum)
+- Retrospectiva da sprint (4 horas)
+	- Itens que não sairam adequadamente
+		- Pessoas
+		- Processos
+		- Ferramentas
+	- O que funcionou e deve ser repetido
+	- O que não funcionou não aconteça mais
+		- Sugestões para melhorias
+
+# Dono do produto (Patrocinadores)
+- Refinamento do backlog de prioridades do produto (Processo contínuo)
+	- Repriorização de estórias
+	- Ajustes sobre o backlog anterior
+	- Aumento de escopo precisa de reavaliação
+		- Deve-se realizar as etapas 1 e 2 da criação do backlog
+
+
+- Definições do projeto
+	- Levantamento de requisitos
+		- Funcionais
+			- Serão medidos nos critérios de aceitação das estórias
+			- Administrador cadastrar revendas
+			- Revendas cadastrar clientes
+			- Revendas ter acesso aos gráficos dos clientes
+			- Clientes podem cadastrar gráficos
+			- Clientes das revendas visualizar gráficos de tráfego de rede
+				- Analisar aumento de dados nas Portas (UDP e TCP)
+				- Identificar os ASN mais utilizados na rede
+		- Não funcionais
+			- Identificar como medir e notificar cada um destes requisitos
+			- Commitar código das aplicações todos os dias
+			- Sistema com acesso no navegador Chrome
+			- Não gerar custos operacionais até iniciar os faturamentos

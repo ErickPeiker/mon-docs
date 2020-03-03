@@ -1,0 +1,41 @@
+sudo docker pull mcr.microsoft.com/mssql/server:2017-latest
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yEks1jj52*BpDT4+' -e 'MSSQL_PID=Express' -p 1433:1433 --name sql1 -d mcr.microsoft.com/mssql/server:2017-latest
+
+docker container ls
+
+docker commit --message 'Versão SQL Server estabilizada' sqlserver-owl sqlserver-owl:20181206
+
+docker run --name=sqlserver-cliente sqlserver-owl:20181206 -p [PORTA_HOST_SERVER]:1433
+
+sudo iptables -A INPUT -p tcp --dport 1433 -j ACCEPT
+
+sudo iptables -t nat -A DOCKER -p tcp --dport 1434 -j DNAT --to-destination [IP_CONTAINER_DOCKER]:1433
+
+___________________________________________________________________________________________________________
+
+https://gist.github.com/vapurrmaid/a111bf3fc0224751cb2f76532aac2465
+
+__________________________________________________________________________________________________________
+
+npm install sequelize-cli -g
+
+cd \%Workspace%\teste-sequelize
+
+npm install sequelize --save
+
+sequelize init
+
+sequelize model:create --name User --attributes first_name:string,last_name:string,bio:text
+sequelize model:create --name Task --attributes title:string
+
+npm install body-parser --save
+
+
+npm install express --save
+
+
+sequelize-auto -o "./models-mssql" -d owlmo -h 127.0.0.1 -u sa -p 8082 -x "yourStrong(!)Password" -e mssql
+
+
+sqlcmd -S 10.158.0.2 -U sa -P yEks1jj52*BpDT4+ > select * from sys.databases

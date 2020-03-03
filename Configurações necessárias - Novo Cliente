@@ -1,0 +1,31 @@
+Inserção de um novo cliente
+
+API Node JS
+	- Aumento Processamento
+	- Aumento Memória
+	- Aumento Dados de entrada (Coletores master)
+	- Aumento Dados de saída (Banco de dados Cliente)
+
+Banco de dados do Cliente
+	- Nova máquina
+	- Armazenamento
+	- Processamento
+	- Memória
+	- Dados de entrada (API NodeJS)
+	- Dados de saída (API PHP)
+
+Banco de dados da Revenda
+	- Aumento Processamento
+	- Aumento Memória
+	- Aumento de Armazenamento
+
+Banco de dados da OWL
+	- Aumento Processamento
+	- Aumento Memória
+	- Aumento de Armazenamento
+
+API PHP
+	- Aumento Processamento
+	- Aumento Memória
+	- Aumento Dados de entrada (Banco de dados Cliente / Revendas / OWL)
+	- Aumento Dados de saída (React JS)

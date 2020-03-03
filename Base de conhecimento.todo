@@ -1,0 +1,68 @@
+***** API Coleta *****
+---- Startup
+	- Instalação do ambiente NodeJs
+	- Configurar servidor para aplicação
+	- Rodar API
+
+***** API Dashboard *****
+---- Startup
+
+***** Coletores *****
+---- Startup 
+	- Instalação Windows
+	- Instalação Linux
+
+***** Dashboard *****
+---- Startup
+
+---- Administradores
+	--- Confgurações
+		- Ordenação de menu
+		
+ 	--- Processos
+		- Configurações iniciais
+		- Listar itens
+		- Alteração de revenda logada
+		- Alteração de cliente logado
+		- Cadastrar usuário
+		- Cadastrar grupo de usuário
+		- Cadastrar revenda
+		- Cadastrar regras (Critérios / Ações)
+		- Criar template
+		- Disponibilizar template para revenda
+
+---- Revendas
+	--- Confgurações
+		- Configurar cobrança dos clientes
+		- Ordenação de menu
+
+	--- Processos
+		- Configurações iniciais
+		- Cadastrar usuário
+		- Alteração de cliente logado (Menu suspenso / Ao clicar sobre incidente)
+		- Cadastrar grupo de usuário
+		- Cadastrar clientes
+		- Cadastrar regras (Critérios / Ações)
+		- Criar template
+		- Listar template
+		- Disponibilizar template para cliente
+
+---- Clientes
+	--- Confgurações
+		- Configurar e-mail para envio
+		- Ordenação de menu
+
+	--- Processos
+		- Configurações iniciais
+		- Cadastrar usuário
+		- Cadastrar grupo de usuário
+		- Cadastrar regras (Critérios / Ações)
+		- Criar template
+		- Criar anotação no incidente
+		- Criar manutenção para regras, itens, servidores ou grupos de equipamentos
+		- Vincular template com grupo de equipamentos
+		- Fazer download do coletor
+
+***** Solução geral ***** 
+---- Processos
+	- Fluxo de dados

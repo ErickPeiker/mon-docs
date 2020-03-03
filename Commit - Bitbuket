@@ -1,0 +1,6 @@
+Validar repositório no qual está situado
+git checkout b- feature/#X
+git add *
+git commit
+git push origin feature/#x
+Ir ao site gitbucket e criar PR
